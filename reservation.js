@@ -106,4 +106,4 @@ function submitReservation() {
     closeModal();
 }
 
-renderTables();
+renderTables(); 
