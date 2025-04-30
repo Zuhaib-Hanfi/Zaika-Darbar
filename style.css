@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
@@ -379,4 +380,387 @@ footer {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+=======
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background-color: whitesmoke;
+    color: #333;
+}
+
+header {
+    background-color: #4b2e2e;
+    position: fixed;
+    color: #fff;
+    display: flex;
+    /* justify-content:center; */
+    /* align-items: center; */
+    height: 6rem;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    height: 6rem;
+    width: 100vw;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    height: 6rem;
+    width: 100vw;
+    padding: 1rem 5rem;
+    overflow: hidden;
+}
+
+#brandName {
+    overflow: hidden;
+    background-color: #f9d8a2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#brandName>img {
+    height: 5.6rem;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+#brandName>img:hover {
+    transform: rotatez(360deg);
+}
+
+#navLinks {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    max-width: 60vw;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+#navLinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+
+
+#log-sign {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f9d8a2;
+    box-shadow: inset -6em 0em white;
+    padding: 0.6rem 1.1rem;
+    border-radius: 20px;
+    width: auto;
+    box-sizing: border-box;
+    transition: 1.5s;
+}
+
+#log-sign a {
+    color: #333;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+a:hover {
+    scale: 1.05;
+}
+
+#log-sign:hover {
+    box-shadow: inset 4.5em 0em white;
+}
+
+
+#heroSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#heroSection p {
+    position: absolute;
+    color: #ffffff;
+    /* margin: 1rem; */
+    font-size: 4rem;
+    font-weight: bolder;
+    /* background-color: #00000026; */
+    padding: 2rem;
+    width: auto;
+    border-radius: 10px;
+}
+
+#heroSection>#welcomeTag {
+    left: 2rem;
+    top: 13vh;
+    font-size: 2.5rem;
+}
+
+#heroSection>#resturantName {
+    color: #f9d8a2;
+    font-size: 5rem;
+}
+
+#heroSection>#tagLine {
+    top: 75vh;
+    right: 2rem;
+    font-size: 3rem;
+}
+
+#heroSection img {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10vh;
+    object-fit: cover;
+
+}
+
+#about {
+    background-color: wheat;
+}
+
+#aboutDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-row:1fr; */
+    gap: 1rem;
+    padding: 2rem 4rem;
+    align-items: center;
+}
+
+#restImg {
+    display: inline-block;
+
+
+}
+
+#aboutDiv>div>img {
+    border-radius: 5px;
+    width: 40vw;
+    height: 40vw;
+    max-width: 400px;
+    max-height: 350px;
+    object-fit: cover;
+}
+
+#aboutText {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    justify-content: center;
+}
+
+#aboutText>p {
+    color: #4b2e2e;
+}
+
+#welcome {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#name {
+    font-size: 3rem;
+    font-weight: bolder;
+    /* color: #f9d8a2;
+    background-color: #4b2e2e; */
+}
+
+#content {
+    font-size: 1.5rem;
+    width: 40vw;
+    /* max-width: 300px; */
+}
+
+#MENU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: wheat;
+}
+
+#menuImg>img {
+    height: 90vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+#menuPara {
+    display: inline-block;
+    position: absolute;
+    left: 3rem;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+#menuName {
+    font-size: 5rem;
+    color: whitesmoke;
+}
+
+#menuContent {
+    font-size: 3rem;
+    color: white;
+}
+
+#menuButton {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #4b2e2e;
+    transition: 1.5s;
+}
+
+#menuButton>a,
+#resvButton>a {
+    text-decoration: none;
+    color: #f9d8a2;
+    transition: 1.5s;
+}
+
+#menuButton:hover,
+#resvButton:hover {
+    box-shadow: inset 0em -2.1em white;
+}
+
+#menuButton:hover a,
+#resvButton:hover a {
+    color: black;
+}
+
+#Reservation {
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+#resv>p {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+#resvP {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    max-width: 60vw;
+}
+
+#resvButton {
+    height: 2.5rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background-color: #4b2e2e;
+    transition: 1.5s;
+}
+
+footer {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #333;
+}
+
+#footerDiv>p {
+    color: #f9d8a2;
+    font-size: 20px;
+}
+
+/* DeepSeek */
+
+/* New Modern Effects */
+/* #heroSection img {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  
+  #navLinks a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f9d8a2;
+    transition: width 0.3s ease;
+  }
+  
+  button {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,255,255,0.4),
+      transparent
+    );
+    transition: 0.5s;
+  }
+  
+  button:hover::after {
+    left: 100%;
+  }
+  
+  /* Animated Gradient Background */
+/* body {
+    background: linear-gradient(-45deg, #fff5e6, #ffe4cc, #ffd8b3, #ffcc99);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+>>>>>>> 15b02fae3e4dbf8ee2d042ec04c0a02a3b7d179b
   }  */
