@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika Darbar</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="Icon" href="./mainImages/favicon.png">
+</head>
+
+<body id="bd">
+    <header>
+        <nav>
+            <div id="navbar">
+                <div id="brandName"><img src="./mainImages/logo.png" alt=""></div>
+                <div id="navLinks">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#MENU">Menu</a>
+                    <a href="#Reservation">Reservation</a>
+                    <div id="log-sign">
+                        <a href="#" id="loginButton">login</a>
+                        <a href="#" id="signupButton">Sign-up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Popup Login Form  -->
+        <div id="login">
+            <!-- <h1>Welcome Back!</h1>
+            <p>Login with your credentials</p> -->
+            <h4 id="formClose">X</h4>
+            <form id="loginForm">
+                <!-- <div id="formDiv"> -->
+                <h2>Login!</h2>
+                <label for="Uname">Username:<br>
+                    <input type="text" name="Uname" id="Uname" placeholder="Enter Your User Name" required>
+                </label>
+                <label for="pass">Password:<br>
+                    <input type="password" name="pass" id="pass" placeholder="Enter Password" required>
+                </label>
+                <button type="submit" id="loggedButton">Login</button>
+                <!-- </div> -->
+            </form>
+        </div>
+
+        <!-- Popup SignUp form -->
+        <div id="signUp">
+            <h4 id="formClose2">X</h4>
+            <form id="signUpForm">
+
+                <h2>Sign-up!</h2>
+                <label for="Uname">Username:<br>
+                    <input type="text" name="Uname" id="Uname" placeholder="Enter Your User Name" required>
+                </label>
+                <label for="age">Age:<br>
+                    <input type="number" name="age" id="age" placeholder="Enter Your Age">
+                </label>
+                <label for="gender">Gender:<br>
+                    <select id="gender" name="gender" required>
+                        <option value="">--Select Gender--</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Defective</option>
+                    </select>
+                </label>
+                <label for="pass">Create-Password:<br>
+                    <input type="password" name="pass" id="pass" placeholder="Create a strong Password" required>
+                </label>
+                <label for="Cpass">Confirm-Password:<br>
+                    <input type="password" name="pass" id="pass" placeholder="Re-Enter Password" required>
+                </label>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <!-- HERO Section -->
+        <section id="hero">
+            <div id="heroSection">
+                <p id="welcomeTag">Welcome to,</p>
+                <p id="resturantName">Zaika Darbar</p>
+                <p id="tagLine">~Taste the tradition</p>
+                <img src="./mainImages/heroBg.png" alt="HeroImage">
+            </div>
+        </section>
+        <!-- About SECTION -->
+        <section id="about">
+            <div id="aboutDiv">
+                <div id="restImg">
+                    <img src="./mainImages/resturantImage.png" alt="">
+                </div>
+                <div id="aboutText">
+                    <p id="welcome">Welcome to, ^_^</p>
+                    <p id="name">Zaika Darbar!</p>
+                    <p id="content">At Zaika Darbar, we serve rich, flavorful dishes inspired by royal Indian
+                        kitchens. From sizzling
+                        tandoori grills to classic curries, every bite is crafted with passion and heritage. Join us for
+                        a
+                        dining experience that’s warm, vibrant, and unforgettable.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU Section -->
+        <section id="MENU">
+            <div id="menuImg"><img src="./mainImages/Menuimg.png" alt=""></div>
+            <div id="menuPara">
+                <p id="menuName">Zaika Darbar</p>
+                <p id="menuContent">Experience the taste of tradition</p>
+                <button id="menuButton"><a href="./menu.html" target="_blank">View Menu</a></button>
+            </div>
+        </section>
+
+        <!-- Reservation section -->
+        <section id="Reservation">
+            <div id="resv">
+                <p>Reservation</p>
+            </div>
+            <div id="resvP">
+                <p>Reserve your seat and indulge in the royal flavors of Zaika Darbar.
+                    Whether it's a cozy dinner for two or a celebration with friends and family, we welcome you with
+                    open arms and authentic Indian hospitality. Book your table in advance to avoid the wait and
+                    experience a delightful culinary journey, curated with passion and tradition</p>
+            </div>
+            <button id="resvButton"><a href="./reservation.html" target="_blank">Reserve Table</a></button>
+        </section>
+    </main>
+    <footer>
+        <div id="footerDiv">
+            <p>Made By Hanfi With &hearts; || All rights are Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

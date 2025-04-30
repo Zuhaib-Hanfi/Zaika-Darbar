@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservation Dashboard</title>
+    <link rel="stylesheet" href="./reservation.css">
+    <link rel="Icon" href="./mainImages/favicon.png">
+</head>
+
+<body>
+    <header>
+        <div>
+            <label for="date">📅</label>
+            <input type="date" id="date" />
+
+            <label for="meal">🍽️</label>
+            <select id="meal">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Dinner</option>
+            </select>
+        </div>
+        <button onclick="openModal(null)">+ New Reservation</button>
+    </header>
+
+    <div class="summary">
+        <div id="availabilitySummary">Loading summary...</div>
+        <div>Avg. Wait: 30 min | Capacity: 80%</div>
+    </div>
+
+    <div class="grid" id="tableGrid"></div>
+
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <h2>Reserve Table</h2>
+            <select id="tableSelect" required></select>
+            <input type="text" id="resName" placeholder="Customer Name" required />
+            <input type="time" id="resTime" required />
+            <button onclick="submitReservation()">Submit</button>
+        </div>
+    </div>
+
+    <script src="./reservation.js"></script>
+</body>
+
+</html>
