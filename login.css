@@ -146,43 +146,9 @@ button:hover {
     color: wheat;
 }
 
-/* Responsive Design */
-/* @media (max-width: 768px) {
-    h1 {
-        font-size: 3rem;
-    }
 
-    p,
-    form {
-        font-size: 1.5rem;
-    }
-}
 
-@media (max-width: 480px) {
-    body {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p,
-    form {
-        font-size: 1.2rem;
-    }
-
-    input {
-        font-size: 1.2rem;
-    }
-
-    button {
-        font-size: 1.2rem;
-        height: 2.2rem;
-    }
-} */
-
-/* Deepseek */
+/* Responsive design */
 @media (max-width: 768px) {
 
     #loginForm,
