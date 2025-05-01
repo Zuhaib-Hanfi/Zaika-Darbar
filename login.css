@@ -73,7 +73,7 @@ p {
 }
 
 /* Close Buttons */
-#formClose,
+/* #formClose,
 #formClose2 {
     position: absolute;
     padding: 1rem;
@@ -91,7 +91,7 @@ p {
 
 #formClose2 {
     top: 5vh;
-}
+} */
 
 /* Form Inputs & Selects */
 label {
@@ -147,7 +147,7 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     h1 {
         font-size: 3rem;
     }
@@ -179,5 +179,38 @@ button:hover {
     button {
         font-size: 1.2rem;
         height: 2.2rem;
+    }
+} */
+
+/* Deepseek */
+@media (max-width: 768px) {
+
+    #loginForm,
+    #signUpForm {
+        width: 90vw;
+        padding: 1rem;
+    }
+
+    #formClose {
+        top: 10vh;
+    }
+
+    #formClose2 {
+        top: 5vh;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    input,
+    select {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    button {
+        width: 8rem;
+        font-size: 1.2rem;
     }
 }

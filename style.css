@@ -324,59 +324,150 @@ footer {
 }
 
 /* DeepSeek */
+/* Hamburger Menu Styles */
+#hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 100;
+}
 
-/* New Modern Effects */
-/* #heroSection img {
-    transform: translateZ(0);
-    will-change: transform;
-  }
-  
-  #navLinks a::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #f9d8a2;
-    transition: width 0.3s ease;
-  }
-  
-  button {
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  button::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255,255,255,0.4),
-      transparent
-    );
-    transition: 0.5s;
-  }
-  
-  button:hover::after {
-    left: 100%;
-  }
-  
-  /* Animated Gradient Background */
-/* body {
-    background: linear-gradient(-45deg, #fff5e6, #ffe4cc, #ffd8b3, #ffcc99);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-  
-  @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }  */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Nav Styles */
+@media (max-width: 768px) {
+    #hamburger {
+        display: block;
+    }
+
+    #navLinks {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 6rem;
+        right: -100%;
+        flex-direction: column;
+        background-color: #4b2e2e70;
+        width: 100%;
+        height: calc(100vh - 6rem);
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        gap: 3rem;
+    }
+
+    #navLinks.active {
+        right: 0;
+    }
+
+    #log-sign {
+        flex-direction: column;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    #log-sign:hover {
+        scale: none;
+        box-shadow: none;
+        overflow: hidden;
+    }
+
+    #log-sign a {
+        color: white;
+    }
+
+
+    /* Header adjustments */
+    #navbar {
+        padding: 1rem 2rem;
+    }
+
+    /* Hero Section */
+    #heroSection p {
+        font-size: 3rem;
+    }
+
+    #heroSection>#resturantName {
+        font-size: 3.5rem;
+    }
+
+    #heroSection>#tagLine {
+        font-size: 2rem;
+        top: 70vh;
+    }
+
+    /* About Section */
+    #aboutDiv {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    #aboutDiv>div>img {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #content {
+        width: 80vw;
+    }
+
+    /* Menu Section */
+    #menuPara {
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #menuName {
+        font-size: 3rem;
+    }
+
+    #menuContent {
+        font-size: 2rem;
+    }
+
+    /* Reservation Section */
+    #resv>p {
+        font-size: 3rem;
+    }
+
+    #resvP {
+        max-width: 80vw;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #heroSection p {
+        font-size: 2rem;
+    }
+
+    #heroSection>#resturantName {
+        font-size: 2.5rem;
+    }
+
+    #heroSection>#tagLine {
+        font-size: 1.5rem;
+    }
+
+    #aboutText #welcome {
+        font-size: 2rem;
+    }
+
+    #aboutText #name {
+        font-size: 2.5rem;
+    }
+
+    #content {
+        font-size: 1.2rem;
+    }
+}
