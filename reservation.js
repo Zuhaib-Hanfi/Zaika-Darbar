@@ -100,7 +100,7 @@ function submitReservation() {
 
     const tableIndex = parseInt(selector.value);
     tables[tableIndex].name = name;
-    tables[tableIndex].time = time;
+    tables[tableIndex].time = time; 
     tables[tableIndex].status = 'reserved';
     renderTables();
     closeModal();

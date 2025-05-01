@@ -1,4 +1,4 @@
-
+// Login Form
 let logButton = document.getElementById('loginButton');
 let loginDiv = document.getElementById('login');
 let formClose = document.getElementById('formClose');
@@ -25,6 +25,7 @@ formClose.addEventListener('click', (e) => {
     e.stopPropagation();
 });
 
+// Sign-up Form
 let signButton = document.getElementById('signupButton');
 let signUpDiv = document.getElementById('signUp');
 let signUpForm = document.getElementById('signUpForm');

@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         <div>
             <label for="date">📅</label>
@@ -25,13 +26,16 @@
         <button onclick="openModal(null)">+ New Reservation</button>
     </header>
 
+    <!-- Summary -->
     <div class="summary">
         <div id="availabilitySummary">Loading summary...</div>
         <div>Avg. Wait: 30 min | Capacity: 80%</div>
     </div>
 
+    <!-- Tables 2 seaters and 4 seaters -->
     <div class="grid" id="tableGrid"></div>
 
+    <!-- Reservation form -->
     <div id="reservationModal" class="modal">
         <div class="modal-content">
             <h2>Reserve Table</h2>
@@ -42,6 +46,7 @@
         </div>
     </div>
 
+    <!-- JS for  Reservation -->
     <script src="./reservation.js"></script>
 </body>
 

@@ -1,3 +1,4 @@
+/* Universal selector */
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +16,7 @@ body {
     color: #333;
 }
 
+/* Header and Navbar */
 header {
     background-color: #4b2e2e;
     position: fixed;
@@ -83,7 +85,7 @@ nav {
 }
 
 
-
+/* Login and Sign-UP popup */
 #log-sign {
     display: flex;
     justify-content: end;
@@ -112,7 +114,7 @@ a:hover {
     box-shadow: inset 4.5em 0em white;
 }
 
-
+/* Hero Section */
 #heroSection {
     display: flex;
     justify-content: center;
@@ -157,6 +159,7 @@ a:hover {
 
 }
 
+/* About Section */
 #about {
     background-color: wheat;
 }
@@ -214,6 +217,7 @@ a:hover {
     /* max-width: 300px; */
 }
 
+/* Menu Section */
 #MENU {
     display: flex;
     justify-content: center;
@@ -276,6 +280,7 @@ a:hover {
     color: black;
 }
 
+/* Reservation Section */
 #Reservation {
     background-color: wheat;
     display: flex;
@@ -309,6 +314,7 @@ a:hover {
     transition: 1.5s;
 }
 
+/* Footer */
 footer {
     height: 15vh;
     display: flex;
@@ -324,7 +330,7 @@ footer {
 }
 
 
-/* Hamburger Menu Styles */
+/* Hamburger Menu */
 #hamburger {
     display: none;
     cursor: pointer;
