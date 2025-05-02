@@ -360,7 +360,7 @@ footer {
         top: 6rem;
         right: -100%;
         flex-direction: column;
-        background-color: #4b2e2e70;
+        background-color: #4b2e2ec1;
         width: 100%;
         height: calc(100vh - 6rem);
         text-align: center;
