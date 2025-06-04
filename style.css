@@ -324,7 +324,9 @@ footer {
     background-color: #333;
     overflow: hidden;
 }
-
+#footerDiv{
+    overflow:hidden;
+}
 #footerDiv>p {
     color: #f9d8a2;
     font-size: 20px;
