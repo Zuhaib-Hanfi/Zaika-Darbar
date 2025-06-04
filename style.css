@@ -322,6 +322,7 @@ footer {
     align-items: center;
     padding: 2rem;
     background-color: #333;
+    overflow: hidden;
 }
 
 #footerDiv>p {
